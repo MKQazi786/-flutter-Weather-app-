@@ -73,13 +73,13 @@ class _HomeViewState extends State<HomeView> {
               onPressed: () {
                 getWeather(_cityController.text);
               },
-              child: const Text('Get Weather'),
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
               ),
+              child: const Text('Get Weather'),
             ),
             const SizedBox(height: 16),
             _isLoading
